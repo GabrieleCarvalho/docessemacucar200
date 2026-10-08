@@ -8,4 +8,7 @@ describe('Oferta do e-book', () => {
   it('oferece 200 receitas', () => {
     expect(product.recipeCount).toBe(200);
   });
+  it('aponta os botões de compra para o checkout da Cakto', () => {
+    expect(product.checkoutUrl).toBe('https://pay.cakto.com.br/5ijn47g_1185376');
+  });
 });
