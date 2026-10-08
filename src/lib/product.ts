@@ -3,7 +3,7 @@ export const product = {
   recipeCount: 200,
   price: 24.9,
   currency: 'BRL',
-  checkoutUrl: '',
+  checkoutUrl: 'https://pay.cakto.com.br/5ijn47g_1185376',
 } as const;
 
 export function formatPrice(price: number) {
