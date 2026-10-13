@@ -16,7 +16,7 @@ describe('Meta pixel install', () => {
 
   it('blocks the pixel in consent regions and when the region is unknown', () => {
     for (const region of ['PT', 'DE', 'FR', 'IT', 'GB', 'CH']) {
-      expect(metaPixelScript).toContain(`'${region}'`);
+      expect(metaPixelScript).toContain(`"${region}"`);
     }
     expect(metaPixelScript).toContain("if(!loc||blocked.indexOf(loc.toUpperCase())!==-1)return");
     expect(metaPixelScript).toContain('/cdn-cgi/trace');
