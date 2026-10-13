@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { metaPixelScript } from "@/lib/meta-pixel";
 
 function NotFoundComponent() {
   return (
@@ -108,6 +109,8 @@ function RootShell({ children }: { children: ReactNode }) {
         <HeadContent />
       </head>
       <body>
+        {/* Meta Pixel: carrega uma vez, em todas as páginas, respeitando as regiões de consentimento. */}
+        <script dangerouslySetInnerHTML={{ __html: metaPixelScript }} />
         {children}
         <Scripts />
       </body>
