@@ -23,3 +23,5 @@ h1,h2,h3 {font-family:'Outfit',sans-serif;font-weight:600} a {text-decoration:no
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 
 .nav .sales-button { color: var(--primary-foreground); }
+.footer-links { margin: 18px 0 0; font-size: 11px; }
+.footer-links a { color: var(--muted-foreground); text-decoration: underline; }
