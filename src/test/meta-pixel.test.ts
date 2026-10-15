@@ -23,7 +23,7 @@ describe('Meta pixel install and regional limits', () => {
     await run('BR'); await run('BR');
     expect(META_PIXEL_ID).toBe('1742630000352865');
     expect(document.querySelectorAll('script[src*="connect.facebook.net"]')).toHaveLength(1);
-    expect(pixel.fbq?.queue?.filter(e => e[0] === 'init')).toEqual([['init', '1742630000352865']]);
+    expect(pixel.fbq?.queue?.filter(e => e[0] === 'init').map(e => Array.from(e))).toEqual([['init', '1742630000352865']]);
     expect(pixel.fbq?.queue?.filter(e => e[1] === 'PageView')).toHaveLength(1);
   });
   it.each(['PT', 'DE', 'FR', 'IT', 'GB', 'CH', 'NO', 'XX', 'T1', ''])('blocks provider transmission for region %s', async region => {
