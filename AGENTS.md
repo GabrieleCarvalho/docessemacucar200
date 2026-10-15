@@ -13,3 +13,5 @@
 - Keep sales-page visual styles in src/styles.css and use the shared Button component for actions so the page remains design-token compliant.
 - Never simulate payment success or ebook delivery without a configured checkout and actual delivery integration.
 - Meta Pixel is installed once in the root route via src/lib/meta-pixel.ts (no consent banner chosen). The pixel must stay blocked in consent regions (EU/EEA, UK, Switzerland) and whenever the region is unknown — do not load it unconditionally.
+- Product-view and checkout-intent events use the shared regional and advertising opt-out gate in src/lib/meta-pixel.ts; external checkout owns confirmed purchase reporting, preventing click-to-purchase misclassification.
+- Serve optimized local WebP renditions for sales imagery while retaining original assets; this reduces transfer size without replacing the established visual content.
