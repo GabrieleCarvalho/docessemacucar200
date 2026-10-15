@@ -83,3 +83,4 @@ a:focus-visible,summary:focus-visible {outline:2px solid var(--primary);outline-
 }
 @media(max-width:360px) {.hero h1 {font-size:30px}.brand small {display:none}.header .brand {font-size:14px}.header {gap:10px}.nav .sales-button {padding:12px;font-size:11px}.hero .check-list {font-size:12px}}
 @media(prefers-reduced-motion:reduce) {.sales-button,.purchase-button {transition:none}}
+.digital-caption {background:var(--background);padding:8px 12px;border-radius:4px}
