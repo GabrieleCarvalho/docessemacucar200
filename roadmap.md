@@ -8,8 +8,11 @@
 - [x] Colocar o link de checkout da Cakto nos botões de compra.
 
 # Otimização para tráfego pago
-- [ ] Analisar a página atual e preservar identidade, preço e checkout.
-- [ ] Refinar textos, ordem das seções, CTAs e experiência no celular.
-- [ ] Otimizar imagens, acessibilidade e metadados.
-- [ ] Validar PageView, ViewContent e InitiateCheckout com bloqueio regional; esclarecer Purchase externo.
-- [ ] Testar computador, celular, links e checkout; informar dependências externas.
+- [x] Analisar a página atual e preservar identidade, preço e checkout.
+- [x] Refinar textos, ordem das seções, CTAs e experiência no celular.
+- [x] Otimizar imagens, acessibilidade e metadados.
+- [x] Validar chamadas PageView, ViewContent e InitiateCheckout com bloqueio regional; esclarecer Purchase externo.
+- [x] Testar computador, celular, links e checkout; informar dependências externas.
+- [ ] Confirmar recebimento dos eventos no Testar Eventos do Meta (requer acesso ao Gerenciador de Eventos; chamadas locais testadas, envio real não comprovado).
+- [ ] Configurar ou conferir Purchase na Cakto (requer acesso às configurações do checkout e compra confirmada).
+- [ ] Publicar as alterações no endereço público (aguarda solicitação de publicação).
