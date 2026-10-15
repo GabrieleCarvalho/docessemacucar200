@@ -79,14 +79,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "200 Sobremesas Zero Açúcar" },
-      { name: "description", content: "200 receitas para adoçar sua rotina, em um e-book digital." },
-      { property: "og:title", content: "200 Sobremesas Zero Açúcar" },
-      { property: "og:description", content: "Conheça o e-book de sobremesas sem açúcar." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" },
       {
         rel: "stylesheet",
